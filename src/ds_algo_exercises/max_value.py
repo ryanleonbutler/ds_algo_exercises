@@ -1,10 +1,10 @@
 from typing import List
 
 def max_value(nums: List) -> int:
-    largest = nums[0]
+    largest = nums[0] 
 
-    for i in range(len(nums)):
-        if nums[i] > largest:
-            largest = nums[i]
+    for num in nums:
+        if num > largest:
+            largest = num 
 
     return largest
