@@ -6,4 +6,4 @@ Followed the problem sets from [structy](https://structy.net/)
 - Max value
 
 ## In progress
-- 
+- Is prime 
