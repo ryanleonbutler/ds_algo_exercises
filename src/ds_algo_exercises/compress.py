@@ -8,21 +8,22 @@ def compress(s: str) -> str:
     Returns:
     str: compressed string e.g. "3a"
     """
+    s += "#"
     result = []
     i = 0
     j = 0
     
     while j < len(s):
-        if (j != len(s) - 1) and s[j] == s[j+1]:
+        if s[i] == s[j]:
             j += 1
         else:
-            j += 1
-            num = len(s[i:j])
+            num = j - i
             if num > 1:
-                result.append(f"{num}{s[j-1]}")
+                result.append(f"{num}{s[i]}")
             else:
-                result.append(f"{s[j-1]}")
+                result.append(f"{s[i]}")
             i = j
+            j += 1
             print(result)
 
     return "".join(result)
