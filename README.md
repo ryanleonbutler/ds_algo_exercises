@@ -3,13 +3,15 @@
 ## Problem Sets
 
 ### Completed
-- Max value
-- Is prime 
-- Uncompress
-- Compress
+- [x] - Max value
+- [x] - Is prime 
+- [x] - Uncompress
+- [x] - Compress
+- [x] - Anagrams
+- [x] - Most frequent char
 
 ### In progress
-- anagrams
+- [] - Pair sum
 
 *Problem sets references:*
 - [structy](https://structy.net/) 
