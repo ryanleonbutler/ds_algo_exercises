@@ -3,7 +3,7 @@ def compress(s: str) -> str:
     Returns compressed string.
 
     Args:
-    s(str): uncompressed string e.g."aaa" 
+    s(str): uncompressed string e.g."aaa"
 
     Returns:
     str: compressed string e.g. "3a"
@@ -12,7 +12,7 @@ def compress(s: str) -> str:
     result = []
     i = 0
     j = 0
-    
+
     while j < len(s):
         if s[i] == s[j]:
             j += 1

@@ -1,6 +1,6 @@
 import pytest
 
-from ds_algo_exercises.anagram_hash_map import anagram
+from ds_algo_exercises.anagram_hash_map import anagrams
 
 
 @pytest.mark.parametrize(
@@ -18,4 +18,4 @@ from ds_algo_exercises.anagram_hash_map import anagram
     ],
 )
 def test_anagram(s1, s2, expected_result):
-    assert anagram(s1, s2) == expected_result
+    assert anagrams(s1, s2) == expected_result

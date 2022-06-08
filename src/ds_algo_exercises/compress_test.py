@@ -1,7 +1,6 @@
 import pytest
 
-
-from ds_algo_exercises.compress import compress    
+from ds_algo_exercises.compress import compress
 
 
 @pytest.mark.parametrize(
@@ -11,7 +10,10 @@ from ds_algo_exercises.compress import compress
         ("ssssbbz", "4s2bz"),
         ("ppoppppp", "2po5p"),
         ("nnneeeeeeeeeeeezz", "3n12e2z"),
-        ("yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy", "127y"),
+        (
+            "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",  # noqa
+            "127y",
+        ),
     ],
 )
 def test_compress(uncompressed_string, expected_result):

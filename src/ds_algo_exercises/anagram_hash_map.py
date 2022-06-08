@@ -1,4 +1,4 @@
-def anagram(s1: str, s2: str) -> bool:
+def anagrams(s1: str, s2: str) -> bool:
     """
     Checks if two string inputs are `anagrams` of each other.
     `Anagrams` are strings that contain the same characters, but in any order.
@@ -10,21 +10,21 @@ def anagram(s1: str, s2: str) -> bool:
     Returns:
         bool: True or False
     """
-    if len(s1) != len(s2):
-        return False
+    s1_map = char_map(s1)
+    s2_map = char_map(s2)
+    if s1_map == s2_map:
+        return True
     else:
-        s1_map = {}
-        for c in s1:
-            s1_map[c] = s1.count(c)
+        return False
 
-        s2_map = {}
-        for c in s2:
-            s2_map[c] = s2.count(c)
 
-        print(s1_map)
-        print(s2_map)
+def char_map(s):
+    count = {}
 
-        if s1_map == s2_map:
-            return True
-        else:
-            return False
+    for char in s:
+        if char not in count:
+            count[char] = 0
+
+        count[char] += 1
+
+    return count

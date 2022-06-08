@@ -2,6 +2,7 @@ import pytest
 
 from ds_algo_exercises.is_prime import is_prime
 
+
 @pytest.mark.parametrize(
     "num, expected_result",
     [
@@ -21,4 +22,4 @@ from ds_algo_exercises.is_prime import is_prime
     ],
 )
 def test_is_prime(num, expected_result):
-    assert is_prime(num) == expected_result 
+    assert is_prime(num) == expected_result

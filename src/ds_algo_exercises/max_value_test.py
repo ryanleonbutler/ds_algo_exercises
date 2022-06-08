@@ -2,6 +2,7 @@ import pytest
 
 from ds_algo_exercises.max_value import max_value
 
+
 @pytest.mark.parametrize(
     "nums, expected_result",
     [
@@ -14,7 +15,5 @@ from ds_algo_exercises.max_value import max_value
         ([2, 5, 1, 1, 4], 5),
     ],
 )
-
 def test_returning_max_value(nums, expected_result):
     assert max_value(nums) == expected_result
-    

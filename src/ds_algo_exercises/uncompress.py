@@ -1,12 +1,12 @@
 def uncompress(s: str) -> str:
     """
-    Returns uncompressed string. 
+    Returns uncompressed string.
 
     Args:
         s(str): string that needs be uncompressed e.g. "2c3a1t"
 
     Returns:
-        str: uncompressed string e.g. "ccaaat" 
+        str: uncompressed string e.g. "ccaaat"
     """
     result = []
     i = 0
@@ -19,7 +19,5 @@ def uncompress(s: str) -> str:
             result.append(s[j] * num)
             j += 1
             i = j
-            
 
     return "".join(result)
-

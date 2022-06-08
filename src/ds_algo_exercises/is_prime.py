@@ -1,4 +1,4 @@
-from math import sqrt, floor
+from math import floor, sqrt
 
 
 def is_prime(num: int) -> bool:
@@ -9,5 +9,4 @@ def is_prime(num: int) -> bool:
         if num % i == 0:
             return False
 
-    return True;
-
+    return True
