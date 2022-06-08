@@ -11,7 +11,7 @@
 - [x] - Most frequent char
 
 ### In progress
-- [] - Pair sum
+- [ ] - Pair sum
 
 *Problem sets references:*
 - [structy](https://structy.net/) 
