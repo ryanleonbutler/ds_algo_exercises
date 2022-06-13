@@ -2,13 +2,7 @@ from typing import List, Tuple
 
 
 def pair_sum(numbers: List, target_sum: int) -> Tuple:
-    j = 0
-    k = 0
-
-    for i in range(len(numbers) - 1):
-        k = 0
-        for n in range(len(numbers) - 1):
-            k += 1
-            if numbers[j] + numbers[k] == target_sum:
-                return (j, k)
-        j += 1
+    for i in range(0, len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if numbers[i] + numbers[j] == target_sum:
+                return (i, j)
