@@ -9,9 +9,10 @@
 - [x] - Compress
 - [x] - Anagrams
 - [x] - Most frequent char
+- [x] - Pair sum
 
 ### In progress
-- [ ] - Pair sum
+- [ ] - 
 
 *Problem sets references:*
 - [structy](https://structy.net/) 
