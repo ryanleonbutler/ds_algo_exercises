@@ -1,9 +1,10 @@
 def pair_product(numbers, target_product):
-    result = ()
+    previous_nums = {}
 
-    for i in range(0, len(numbers)):
-        for j in range(i + 1, len(numbers)):
-            if numbers[i] * numbers[j] == target_product:
-                result = (i, j)
+    for index, num in enumerate(numbers):
+        complement = target_product / num
 
-    return result
+        if complement in previous_nums:
+            return (previous_nums[complement], index)
+
+        previous_nums[num] = index

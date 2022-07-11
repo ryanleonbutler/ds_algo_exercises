@@ -70,6 +70,25 @@ exclude = '''
 [tool.coverage.report]
 skip_empty = true
 
+[tool.pyright]
+include = ["src"]
+exclude = ["**/node_modules",
+    "**/__pycache__",
+    "src/experimental",
+    "src/typestubs"
+]
+venv = ".venv"
+
+reportMissingImports = true
+reportMissingTypeStubs = false
+
+pythonVersion = "3.10"
+
+executionEnvironments = [
+  { root = "src/tests"},
+  { root = "src" }
+]
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
