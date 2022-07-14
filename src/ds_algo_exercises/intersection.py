@@ -4,9 +4,10 @@ from typing import List
 def intersection(list_a: List, list_b: List) -> List:
     new_list = []
 
-    for j in list_a:
-        for k in list_b:
-            if j == k:
-                new_list.append(j)
+    set_b = set(list_b)
+
+    for num in list_a:
+        if num in set_b:
+            new_list.append(num)
 
     return sorted(new_list)
